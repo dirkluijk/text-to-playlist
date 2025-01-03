@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.2...v0.1.3) (2025-01-03)
+
+
+### Bug Fixes
+
+* use CLI version from deno.json ([4fd49f1](https://github.com/dirkluijk/text-to-playlist/commit/4fd49f1e966da1afc4abd41cc41284d5de2004ef))
+
 ## [0.1.2](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.1...v0.1.2) (2025-01-03)
 
 
