@@ -46,7 +46,7 @@ export async function retrieveAccessToken(): Promise<string> {
       new URLSearchParams({
         response_type: "code",
         client_id: CLIENT_ID,
-        scope: "playlist-modify-private",
+        scope: "playlist-modify-private,playlist-modify-public",
         code_challenge_method: "S256",
         code_challenge: codeChallenge,
         redirect_uri: REDIRECT_URI,
