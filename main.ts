@@ -19,7 +19,7 @@ const { args, options } = await new Command()
     "The Spotify Playlist URL to add to tracks to",
     { required: true },
   )
-  .option('-D, --debug', 'Outputs debugging logs')
+  .option("-D, --debug", "Outputs debugging logs")
   .option(
     "--remove-duplicates [flag:boolean]",
     "Whether to filter out duplicates from input",
@@ -50,8 +50,8 @@ const trackUrls = removeDuplicates
 const tracks = trackUrls.map(Track.fromUrl);
 
 if (options.debug) {
-  console.debug('Found tracks:');
-  console.table(tracks.map((it) => it.toUrl()))
+  console.debug("Found tracks:");
+  console.table(tracks.map((it) => it.toUrl()));
 }
 
 const currentTracks = await new PageIterator(

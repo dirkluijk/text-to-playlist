@@ -8,9 +8,10 @@ const REDIRECT_URI = "http://localhost:8888/callback";
 
 const [codeVerifier, codeChallenge] = await createPkceChallenge();
 
+/**
+ * Starts a local web server to accept the callback from the Spotify Authorization flow.
+ */
 function waitForAuthorization(options: { port: number }): Promise<string> {
-  // wait for user to have accepted
-  // opens web server to accept the callback
   return new Promise<string>((resolve, reject) => {
     const abortController = new AbortController();
     const server = Deno.serve({
@@ -52,8 +53,11 @@ export async function retrieveAccessToken(): Promise<string> {
       }).toString(),
   );
 
+  // wait for user to have accepted
+  // opens web server to accept the callback
   const code = await waitForAuthorization({ port: 8888 });
 
+  // now request the access token based on the authorization code
   const { access_token } = await wretch("https://accounts.spotify.com/api/token")
     .addon(FormUrlAddon)
     .formUrl({
