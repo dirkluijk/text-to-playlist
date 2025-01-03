@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.3...v0.1.4) (2025-01-03)
+
+
+### Bug Fixes
+
+* fixed incorrect JSON parsing of version info ([cee984a](https://github.com/dirkluijk/text-to-playlist/commit/cee984a1fe3fc07ded73339f5bf91f7349327a5a))
+
 ## [0.1.3](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.2...v0.1.3) (2025-01-03)
 
 
