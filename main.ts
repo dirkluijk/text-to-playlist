@@ -28,9 +28,9 @@ const { args, options } = await new Command()
   .option(
     "--remove-other-tracks [flag:boolean]",
     "Whether to remove tracks from playlist that do not exit in input",
-    { default: true },
+    { default: false },
   )
-  .arguments("<input>")
+  .arguments("<inputFileOrText>")
   .parse(Deno.args);
 
 const input = await exists(args[0]) ? await Deno.readTextFile(args[0]) : args[0];

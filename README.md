@@ -6,7 +6,7 @@ Simple CLI script to sync Spotify tracks from a raw text to a playlist.
 
 Install Deno, and run:
 ```bash
-deno run --allow-net jsr:@dirkluijk/text-to-playlist <input> --playlist <playlistUrl>
+deno run --allow-net jsr:@dirkluijk/text-to-playlist <inputFileOrText> --playlist <playlistUrl>
 ```
 
 ## Options
