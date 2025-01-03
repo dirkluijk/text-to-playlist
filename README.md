@@ -21,7 +21,7 @@ deno run --allow-net jsr:@dirkluijk/text-to-playlist <inputFileOrText> --playlis
 -P, --playlist         <playlistUrl>  - The Spotify Playlist URL to add to tracks to                      (required)     
 -D, --debug                           - Outputs debugging logs                                                           
 --remove-duplicates    [flag]         - Whether to filter out duplicates from input                       (Default: true)
---remove-other-tracks  [flag]         - Whether to remove tracks from playlist that do not exit in input  (Default: true)
+--remove-other-tracks  [flag]         - Whether to remove tracks from playlist that do not exit in input  (Default: false)
 ```
 
 ## Contributors
