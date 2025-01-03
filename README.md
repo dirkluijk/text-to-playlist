@@ -1,5 +1,8 @@
 # Text to playlist 🎸
 
+[![JSR version](http://img.shields.io/jsr/v/@dirkluijk/text-to-playlist.svg)](https://jsr.io/@dirkluijk/text-to-playlist)
+[![Build status](https://github.com/dirkluijk/text-to-playlist/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dirkluijk/text-to-playlist/actions/workflows/ci.yml)
+
 Simple CLI script to sync Spotify tracks from a raw text to a playlist.
 
 ## Usage
