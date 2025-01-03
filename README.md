@@ -26,6 +26,22 @@ deno run --allow-net jsr:@dirkluijk/text-to-playlist <inputFileOrText> --playlis
 --remove-other-tracks  [flag]         - Whether to remove tracks from playlist that do not exit in input  (Default: false)
 ```
 
+## Programmatic usage
+
+To use this library in Deno, install it from JSR:
+
+```bash
+deno add jsr:@dirkluijk/text-to-playlist
+```
+
+```typescript
+import { textToPlaylist } from "@dirkluijk/text-to-playlist";
+
+await textToPlaylist("some text or file", "link to playlist");
+```
+
+Check out the [API docs here](https://jsr.io/@dirkluijk/text-to-playlist/doc).
+
 ## Contributors
 
 - [@dirkluijk](https://github.com/dirkluijk) - Deno fork
