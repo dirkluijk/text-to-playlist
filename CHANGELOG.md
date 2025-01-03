@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.4...v0.2.0) (2025-01-03)
+
+
+### Features
+
+* enable using text-to-playlist as library ([4d8c052](https://github.com/dirkluijk/text-to-playlist/commit/4d8c0522af8de37185974a1ca2e4539bac656c1f))
+
 ## [0.1.4](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.3...v0.1.4) (2025-01-03)
 
 
