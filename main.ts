@@ -5,13 +5,13 @@ import { addItemsToPlaylist, getPlaylistTracks, removePlaylistItems, SpotifyClie
 import { Command } from "@cliffy/command";
 import { Playlist, Track } from "./src/utils/spotify.ts";
 import { retrieveAccessToken } from "./src/utils/spotify-authorization.ts";
-import { version } from "./deno.json" with { type: "json" };
+import denoJSON from "./deno.json" with { type: "json" };
 
 const SPOTIFY_TRACK_PATTERN = /https:\/\/open\.spotify\.com\/track\/\w+/g;
 
 const { args, options } = await new Command()
   .name("text-to-playlist")
-  .version(version)
+  .version(denoJSON.version)
   .description(
     "Adds all Spotify tracks in the given text to a Spotify Playlist",
   )
