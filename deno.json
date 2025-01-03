@@ -1,0 +1,20 @@
+{
+  "name": "@dirkluijk/text-to-playlist",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./main.ts",
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "fmt": {
+    "lineWidth": 120
+  },
+  "imports": {
+    "@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.5",
+    "@soundify/web-api": "jsr:@soundify/web-api@^1.1.5",
+    "@std/collections": "jsr:@std/collections@^1.0.9",
+    "@std/encoding": "jsr:@std/encoding@^1.0.6",
+    "@std/fs": "jsr:@std/fs@^1.0.8",
+    "wretch": "npm:wretch@^2.11.0"
+  }
+}
