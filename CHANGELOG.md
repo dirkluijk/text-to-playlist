@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/dirkluijk/text-to-playlist/compare/v0.2.1...v0.2.2) (2025-01-04)
+
+
+### Code Refactoring
+
+* minor improvements ([38d3e7a](https://github.com/dirkluijk/text-to-playlist/commit/38d3e7a3adaa56659d504ac32c97dd4a176e222c))
+
 ## [0.2.1](https://github.com/dirkluijk/text-to-playlist/compare/v0.2.0...v0.2.1) (2025-01-04)
 
 
