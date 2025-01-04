@@ -70,6 +70,9 @@ export async function textToPlaylist(
   };
 }
 
+/**
+ * Additional options.
+ */
 export type Options = {
   /**
    * Whether to filter out duplicates from input.
@@ -87,6 +90,9 @@ export type Options = {
   debug: boolean;
 };
 
+/**
+ * Result of the playlist synchronization.
+ */
 export type Result = {
   /**
    * Track URIs that were added.
