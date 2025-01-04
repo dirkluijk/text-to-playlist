@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/dirkluijk/text-to-playlist/compare/v0.2.0...v0.2.1) (2025-01-04)
+
+
+### Bug Fixes
+
+* export types ([731db67](https://github.com/dirkluijk/text-to-playlist/commit/731db67f61f6178a8b1415bdbc8113ee8b83578d))
+
 ## [0.2.0](https://github.com/dirkluijk/text-to-playlist/compare/v0.1.4...v0.2.0) (2025-01-03)
 
 
