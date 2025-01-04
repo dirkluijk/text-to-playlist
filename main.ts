@@ -1,6 +1,6 @@
 import { Command } from "@cliffy/command";
 import denoJSON from "./deno.json" with { type: "json" };
-import { defaultOptions, textToPlaylist } from './src/text-to-playlist.ts';
+import { defaultOptions, textToPlaylist } from "./src/text-to-playlist.ts";
 
 export { textToPlaylist } from "./src/text-to-playlist.ts";
 export type { Options, Result } from "./src/text-to-playlist.ts";
@@ -31,15 +31,19 @@ if (import.meta.main) {
     .arguments("<inputFileOrText>")
     .parse(Deno.args);
 
-  const { tracksAdded, tracksRemoved } = await textToPlaylist(args[0], options.playlist, {
-    ...options,
+  const [input] = args;
+  const { playlist, removeDuplicates, removeOtherTracks, debug } = options;
+  const { tracksAdded, tracksRemoved } = await textToPlaylist(input, playlist, {
+    removeDuplicates,
+    removeOtherTracks,
+    debug,
   });
 
   console.log(
-    `Added ${tracksAdded.length} tracks to playlist: ${options.playlist}`,
+    `Added ${tracksAdded.length} tracks to playlist: ${playlist}`,
   );
 
   console.log(
-    `Added ${tracksRemoved.length} tracks to playlist: ${options.playlist}`,
+    `Added ${tracksRemoved.length} tracks to playlist: ${playlist}`,
   );
 }
