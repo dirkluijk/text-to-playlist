@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/dirkluijk/text-to-playlist/compare/v0.2.3...v0.2.4) (2025-01-05)
+
+
+### Bug Fixes
+
+* ask net permissions upfront ([c711b06](https://github.com/dirkluijk/text-to-playlist/commit/c711b0621e0f7a82580aca68f8f05a7a9ac9a663))
+
 ## [0.2.3](https://github.com/dirkluijk/text-to-playlist/compare/v0.2.2...v0.2.3) (2025-01-04)
 
 
