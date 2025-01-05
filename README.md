@@ -12,7 +12,7 @@ Install the script with [Deno]:
 [Deno]: https://docs.deno.com/runtime/getting_started/installation/
 
 ```bash
-deno install jsr:@dirkluijk/text-to-playlist --global --allow-net --allow-read --allow-run 
+deno install jsr:@dirkluijk/text-to-playlist --global --allow-net --allow-run 
 ```
 
 Now just run it:
@@ -22,10 +22,16 @@ text-to-playlist <inputFileOrText> --playlist <playlistUrl>
 
 To run the script without installing, run:
 ```bash
-deno run --allow-net jsr:@dirkluijk/text-to-playlist <inputFileOrText> --playlist <playlistUrl>
+deno run jsr:@dirkluijk/text-to-playlist <inputFileOrText> --playlist <playlistUrl>
 ```
 
-## Options
+### Required permissions
+
+* `allow-net`: to make network requests to the Spotify Web API
+* `allow-run`: to open the browser for authorization
+* `allow-read`: to read the input file (optional)
+
+### Options
 
 ```
 -h, --help                            - Show this help.                                                                  

@@ -40,6 +40,9 @@ function waitForAuthorization(options: { port: number }): Promise<string> {
 }
 
 export async function retrieveAccessToken(): Promise<string> {
+  // request permissions upfront
+  await Deno.permissions.request({ name: "net", host: '0.0.0.0:8888' });
+
   // ask user authorization
   await open(
     "https://accounts.spotify.com/authorize?" +
